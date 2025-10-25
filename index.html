@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 A Special Message 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Password Screen -->
+    <div id="passwordScreen" class="screen active">
+        <div class="container">
+            <div class="heart-icon">💝</div>
+            <h1 class="title">Enter the Secret Word</h1>
+            <p class="subtitle">Hint: It's what makes my heart skip a beat 💓</p>
+            <input type="password" id="passwordInput" placeholder="Type here..." autocomplete="off">
+            <button id="submitBtn" class="btn">Unlock My Heart</button>
+            <p id="errorMsg" class="error-msg"></p>
+        </div>
+    </div>
+
+    <!-- Love Message Screen -->
+    <div id="loveScreen" class="screen">
+        <div class="container">
+            <div class="hearts-background">
+                <span class="heart">💖</span>
+                <span class="heart">💗</span>
+                <span class="heart">💕</span>
+                <span class="heart">💞</span>
+                <span class="heart">💝</span>
+                <span class="heart">💘</span>
+                <span class="heart">💖</span>
+                <span class="heart">💗</span>
+            </div>
+            <h1 class="love-message">I Love You</h1>
+            <p class="love-subtitle">More than words can say... 💕</p>
+            <button id="continueBtn" class="btn pulse">Continue to Your Surprise</button>
+        </div>
+    </div>
+
+    <!-- Wheel Screen -->
+    <div id="wheelScreen" class="screen">
+        <div class="container">
+            <h1 class="wheel-title">🎁 Spin the Wheel of Love! 🎁</h1>
+            <p class="wheel-subtitle">Click the wheel to discover your gift!</p>
+            
+            <div class="wheel-container">
+                <div class="wheel-pointer">▼</div>
+                <canvas id="wheelCanvas" width="400" height="400"></canvas>
+                <button id="spinBtn" class="spin-btn">SPIN!</button>
+            </div>
+            
+            <div id="resultModal" class="modal">
+                <div class="modal-content">
+                    <h2 class="result-title">🎉 You Won! 🎉</h2>
+                    <p class="result-text" id="resultText"></p>
+                    <button id="spinAgainBtn" class="btn">Spin Again!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

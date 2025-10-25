@@ -216,23 +216,28 @@ input[type="password"]:focus {
 }
 
 /* Wheel Screen Styles */
+#wheelScreen .container {
+    max-width: 600px;
+    padding: 30px 20px;
+}
+
 .wheel-title {
-    font-size: 36px;
+    font-size: 28px;
     color: #764ba2;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 
 .wheel-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .wheel-container {
     position: relative;
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .wheel-pointer {
@@ -250,6 +255,8 @@ input[type="password"]:focus {
     display: block;
     border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    height: auto;
 }
 
 .spin-btn {
@@ -319,7 +326,7 @@ input[type="password"]:focus {
 .result-text {
     font-size: 24px;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-weight: 600;
 }
 
@@ -329,8 +336,12 @@ input[type="password"]:focus {
         padding: 30px 20px;
     }
     
+    #wheelScreen .container {
+        padding: 20px 15px;
+    }
+    
     .title, .wheel-title {
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .love-message {
@@ -338,14 +349,19 @@ input[type="password"]:focus {
     }
     
     #wheelCanvas {
-        width: 300px !important;
-        height: 300px !important;
+        width: 280px !important;
+        height: 280px !important;
     }
     
     .spin-btn {
-        width: 80px;
-        height: 80px;
-        font-size: 16px;
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+    }
+    
+    .wheel-pointer {
+        font-size: 30px;
+        top: -15px;
     }
 }
 

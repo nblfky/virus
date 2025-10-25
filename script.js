@@ -1,5 +1,5 @@
 // Password Configuration
-const correctPassword = "love"; // Change this to your desired password
+const correctPassword = "rizzler"; // Change this to your desired password
 
 // Screen Elements
 const passwordScreen = document.getElementById('passwordScreen');
@@ -20,18 +20,17 @@ const ctx = canvas.getContext('2d');
 const spinBtn = document.getElementById('spinBtn');
 const resultModal = document.getElementById('resultModal');
 const resultText = document.getElementById('resultText');
-const spinAgainBtn = document.getElementById('spinAgainBtn');
 
 // Gift options for the wheel
 const gifts = [
-    "💝 A romantic dinner date",
-    "🎬 Movie night of your choice",
-    "🍰 Your favorite dessert",
-    "💆 Relaxing massage",
-    "🎮 Game night together",
-    "🌹 A bouquet of flowers",
-    "☕ Coffee date at your fav spot",
-    "🎨 Art class together"
+    "a meal",
+    "mystery box",
+    "a new phone",
+    "in game wuwa coin",
+    "random gift (big or small u name it)",
+    "a kiss",
+    "aww nothing",
+    "a trip"
 ];
 
 const colors = [
@@ -208,9 +207,6 @@ function showResult(finalAngle) {
 
 // Event Listeners
 spinBtn.addEventListener('click', spinWheel);
-spinAgainBtn.addEventListener('click', () => {
-    resultModal.classList.remove('active');
-});
 
 // Close modal when clicking outside
 resultModal.addEventListener('click', (e) => {
